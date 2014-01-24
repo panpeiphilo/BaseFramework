@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09E3748D-7A16-495A-A749-6BF07AB06333}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Philo.Web</RootNamespace>
+    <AssemblyName>Philo.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\ie\html5.js" />
+    <Content Include="Content\ie\respond.min.js" />
+    <Content Include="Content\Image\acc_icons.png" />
+    <Content Include="Content\Image\adt-icons.png" />
+    <Content Include="Content\Image\ajax_loader.gif" />
+    <Content Include="Content\Image\attach.png" />
+    <Content Include="Content\Image\bg_a.png" />
+    <Content Include="Content\Image\bg_b.png" />
+    <Content Include="Content\Image\bg_c.png" />
+    <Content Include="Content\Image\bg_d.png" />
+    <Content Include="Content\Image\bg_e.png" />
+    <Content Include="Content\Image\blank.gif" />
+    <Content Include="Content\Image\bullet_blue.png" />
+    <Content Include="Content\Image\bullet_green.png" />
+    <Content Include="Content\Image\bullet_orange.png" />
+    <Content Include="Content\Image\bullet_red.png" />
+    <Content Include="Content\Image\details_close.png" />
+    <Content Include="Content\Image\details_open.png" />
+    <Content Include="Content\Image\error_big.png" />
+    <Content Include="Content\Image\external_link.png" />
+    <Content Include="Content\Image\flags\flags.css" />
+    <Content Include="Content\Image\flags\flags.png" />
+    <Content Include="Content\Image\gCons\add-item.png" />
+    <Content Include="Content\Image\gCons\addressbook.png" />
+    <Content Include="Content\Image\gCons\agent.png" />
+    <Content Include="Content\Image\gCons\apple.png" />
+    <Content Include="Content\Image\gCons\arrow-round.png" />
+    <Content Include="Content\Image\gCons\badge.png" />
+    <Content Include="Content\Image\gCons\bar-chart-02.png" />
+    <Content Include="Content\Image\gCons\bar-chart.png" />
+    <Content Include="Content\Image\gCons\battery-full.png" />
+    <Content Include="Content\Image\gCons\bird.png" />
+    <Content Include="Content\Image\gCons\boat.png" />
+    <Content Include="Content\Image\gCons\bookmark.png" />
+    <Content Include="Content\Image\gCons\briefcase.png" />
+    <Content Include="Content\Image\gCons\calculator.png" />
+    <Content Include="Content\Image\gCons\calendar.png" />
+    <Content Include="Content\Image\gCons\cassette.png" />
+    <Content Include="Content\Image\gCons\chain.png" />
+    <Content Include="Content\Image\gCons\chat-.png" />
+    <Content Include="Content\Image\gCons\chat-02.png" />
+    <Content Include="Content\Image\gCons\cloud-filled.png" />
+    <Content Include="Content\Image\gCons\cloud-outline.png" />
+    <Content Include="Content\Image\gCons\computer.png" />
+    <Content Include="Content\Image\gCons\configuration.png" />
+    <Content Include="Content\Image\gCons\configuration02.png" />
+    <Content Include="Content\Image\gCons\connected.png" />
+    <Content Include="Content\Image\gCons\connections.png" />
+    <Content Include="Content\Image\gCons\container.png" />
+    <Content Include="Content\Image\gCons\copy-item.png" />
+    <Content Include="Content\Image\gCons\database.png" />
+    <Content Include="Content\Image\gCons\delete-item.png" />
+    <Content Include="Content\Image\gCons\disc.png" />
+    <Content Include="Content\Image\gCons\dollar.png" />
+    <Content Include="Content\Image\gCons\download.png" />
+    <Content Include="Content\Image\gCons\edit.png" />
+    <Content Include="Content\Image\gCons\email.png" />
+    <Content Include="Content\Image\gCons\fan.png" />
+    <Content Include="Content\Image\gCons\fancy-globe.png" />
+    <Content Include="Content\Image\gCons\female-user.png" />
+    <Content Include="Content\Image\gCons\fire.png" />
+    <Content Include="Content\Image\gCons\first-aid.png" />
+    <Content Include="Content\Image\gCons\flag.png" />
+    <Content Include="Content\Image\gCons\flower.png" />
+    <Content Include="Content\Image\gCons\full-screen.png" />
+    <Content Include="Content\Image\gCons\glasses.png" />
+    <Content Include="Content\Image\gCons\globe.png" />
+    <Content Include="Content\Image\gCons\happy-face.png" />
+    <Content Include="Content\Image\gCons\headphone.png" />
+    <Content Include="Content\Image\gCons\heart.png" />
+    <Content Include="Content\Image\gCons\home.png" />
+    <Content Include="Content\Image\gCons\ID.png" />
+    <Content Include="Content\Image\gCons\ipod.png" />
+    <Content Include="Content\Image\gCons\lab.png" />
+    <Content Include="Content\Image\gCons\lady.png" />
+    <Content Include="Content\Image\gCons\lamp.png" />
+    <Content Include="Content\Image\gCons\leaves.png" />
+    <Content Include="Content\Image\gCons\light.png" />
+    <Content Include="Content\Image\gCons\line-globe.png" />
+    <Content Include="Content\Image\gCons\lock.png" />
+    <Content Include="Content\Image\gCons\lookup.png" />
+    <Content Include="Content\Image\gCons\male-user.png" />
+    <Content Include="Content\Image\gCons\microphone.png" />
+    <Content Include="Content\Image\gCons\mobile.png" />
+    <Content Include="Content\Image\gCons\mobile2.png" />
+    <Content Include="Content\Image\gCons\mouse.png" />
+    <Content Include="Content\Image\gCons\multi-agents.png" />
+    <Content Include="Content\Image\gCons\music-node.png" />
+    <Content Include="Content\Image\gCons\network-pc.png" />
+    <Content Include="Content\Image\gCons\network.png" />
+    <Content Include="Content\Image\gCons\next-item.png" />
+    <Content Include="Content\Image\gCons\phone.png" />
+    <Content Include="Content\Image\gCons\pie-chart.png" />
+    <Content Include="Content\Image\gCons\pin.png" />
+    <Content Include="Content\Image\gCons\plane.png" />
+    <Content Include="Content\Image\gCons\print.png" />
+    <Content Include="Content\Image\gCons\processing-02.png" />
+    <Content Include="Content\Image\gCons\processing.png" />
+    <Content Include="Content\Image\gCons\push-pin.png" />
+    <Content Include="Content\Image\gCons\recycle-empty.png" />
+    <Content Include="Content\Image\gCons\recycle-full.png" />
+    <Content Include="Content\Image\gCons\reload.png" />
+    <Content Include="Content\Image\gCons\rss.png" />
+    <Content Include="Content\Image\gCons\satellite.png" />
+    <Content Include="Content\Image\gCons\save.png" />
+    <Content Include="Content\Image\gCons\scale.png" />
+    <Content Include="Content\Image\gCons\Scissors.png" />
+    <Content Include="Content\Image\gCons\screen.png" />
+    <Content Include="Content\Image\gCons\search.png" />
+    <Content Include="Content\Image\gCons\server.png" />
+    <Content Include="Content\Image\gCons\shield.png" />
+    <Content Include="Content\Image\gCons\shut-down.png" />
+    <Content Include="Content\Image\gCons\star.png" />
+    <Content Include="Content\Image\gCons\tag.png" />
+    <Content Include="Content\Image\gCons\tap.png" />
+    <Content Include="Content\Image\gCons\tree.png" />
+    <Content Include="Content\Image\gCons\umbrella.png" />
+    <Content Include="Content\Image\gCons\unlock.png" />
+    <Content Include="Content\Image\gCons\usb.png" />
+    <Content Include="Content\Image\gCons\van.png" />
+    <Content Include="Content\Image\gCons\wifi.png" />
+    <Content Include="Content\Image\gCons\world.png" />
+    <Content Include="Content\Image\main_bg.gif" />
+    <Content Include="Content\Image\main_bg_right.gif" />
+    <Content Include="Content\Image\poster.jpg" />
+    <Content Include="Content\Image\sidebar_switch.png" />
+    <Content Include="Content\Image\spinner_arrows.gif" />
+    <Content Include="Content\Image\splashy\splashy.css" />
+    <Content Include="Content\Image\splashy\splashy.png" />
+    <Content Include="Content\Image\ui.totop.png" />
+    <Content Include="Content\Image\user_avatar.png" />
+    <Content Include="Content\Image\vid_local.png" />
+    <Content Include="Content\Image\vid_vimeo.png" />
+    <Content Include="Content\Image\vid_yt.png" />
+    <Content Include="Content\Image\vimeo.png" />
+    <Content Include="Content\Script\bootstrap.plugins.js" />
+    <Content Include="Content\Script\bootstrap.plugins.min.js" />
+    <Content Include="Content\Script\forms\jquery.autosize.js" />
+    <Content Include="Content\Script\forms\jquery.autosize.min.js" />
+    <Content Include="Content\Script\forms\jquery.counter.min.js" />
+    <Content Include="Content\Script\forms\jquery.inputmask.min.js" />
+    <Content Include="Content\Script\forms\jquery.progressbar.anim.js" />
+    <Content Include="Content\Script\forms\jquery.spinners.min.js" />
+    <Content Include="Content\Script\forms\jquery.ui.touch-punch.min.js" />
+    <Content Include="Content\Script\gebo_btns.js" />
+    <Content Include="Content\Script\gebo_calendar.js" />
+    <Content Include="Content\Script\gebo_charts.js" />
+    <Content Include="Content\Script\gebo_chat.js" />
+    <Content Include="Content\Script\gebo_common.js" />
+    <Content Include="Content\Script\gebo_dashboard.js" />
+    <Content Include="Content\Script\gebo_datatables.js" />
+    <Content Include="Content\Script\gebo_dynamic_tree.js" />
+    <Content Include="Content\Script\gebo_editable_elements.js" />
+    <Content Include="Content\Script\gebo_explorer.js" />
+    <Content Include="Content\Script\gebo_floating_header.js" />
+    <Content Include="Content\Script\gebo_forms.js" />
+    <Content Include="Content\Script\gebo_gallery.js" />
+    <Content Include="Content\Script\gebo_icons.js" />
+    <Content Include="Content\Script\gebo_mailbox.js" />
+    <Content Include="Content\Script\gebo_maps.js" />
+    <Content Include="Content\Script\gebo_notifications.js" />
+    <Content Include="Content\Script\gebo_search.js" />
+    <Content Include="Content\Script\gebo_tables.js" />
+    <Content Include="Content\Script\gebo_user_profile.js" />
+    <Content Include="Content\Script\gebo_user_static.js" />
+    <Content Include="Content\Script\gebo_validation.js" />
+    <Content Include="Content\Script\gebo_widgets.js" />
+    <Content Include="Content\Script\gebo_wizard.js" />
+    <Content Include="Content\Script\gmap3.min.js" />
+    <Content Include="Content\Script\ios-orientationchange-fix.js" />
+    <Content Include="Content\Script\jquery-migrate.min.js" />
+    <Content Include="Content\Script\jquery.actual.min.js" />
+    <Content Include="Content\Script\jquery.debouncedresize.min.js" />
+    <Content Include="Content\Script\jquery.easing.1.3.min.js" />
+    <Content Include="Content\Script\jquery.imagesloaded.min.js" />
+    <Content Include="Content\Script\jquery.mediaTable.js" />
+    <Content Include="Content\Script\jquery.mediaTable.min.js" />
+    <Content Include="Content\Script\jquery.min.js" />
+    <Content Include="Content\Script\jquery.mockjax.js" />
+    <Content Include="Content\Script\jquery.peity.min.js" />
+    <Content Include="Content\Script\jquery.wookmark.js" />
+    <Content Include="Content\Script\jquery_cookie.min.js" />
+    <Content Include="Content\Script\selectNav.js" />
+    <Content Include="Content\Style\blue.css" />
+    <Content Include="Content\Style\brown.css" />
+    <Content Include="Content\Style\dark.css" />
+    <Content Include="Content\Style\eastern_blue.css" />
+    <Content Include="Content\Style\green.css" />
+    <Content Include="Content\ie\ie.css" />
+    <Content Include="Content\Style\style.css" />
+    <Content Include="Content\Style\tamarillo.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Index.aspx" />
+    <Content Include="lib\antiscroll\antiscroll.css" />
+    <Content Include="lib\antiscroll\antiscroll.js" />
+    <Content Include="lib\antiscroll\antiscroll.min.js" />
+    <Content Include="lib\antiscroll\index.html" />
+    <Content Include="lib\antiscroll\jquery-mousewheel.js" />
+    <Content Include="lib\qtip2\jquery.qtip.css" />
+    <Content Include="lib\qtip2\jquery.qtip.js" />
+    <Content Include="lib\qtip2\jquery.qtip.min.css" />
+    <Content Include="lib\qtip2\jquery.qtip.min.js" />
+    <Content Include="lib\validation\additional-methods.js" />
+    <Content Include="lib\validation\changelog.txt" />
+    <Content Include="lib\validation\grunt.js" />
+    <Content Include="lib\validation\jquery.validate.js" />
+    <Content Include="lib\validation\jquery.validate.min.js" />
+    <Content Include="lib\validation\localization\messages_ar.js" />
+    <Content Include="lib\validation\localization\messages_bg.js" />
+    <Content Include="lib\validation\localization\messages_ca.js" />
+    <Content Include="lib\validation\localization\messages_cn.js" />
+    <Content Include="lib\validation\localization\messages_cs.js" />
+    <Content Include="lib\validation\localization\messages_da.js" />
+    <Content Include="lib\validation\localization\messages_de.js" />
+    <Content Include="lib\validation\localization\messages_ee.js" />
+    <Content Include="lib\validation\localization\messages_el.js" />
+    <Content Include="lib\validation\localization\messages_es.js" />
+    <Content Include="lib\validation\localization\messages_eu.js" />
+    <Content Include="lib\validation\localization\messages_fa.js" />
+    <Content Include="lib\validation\localization\messages_fi.js" />
+    <Content Include="lib\validation\localization\messages_fr.js" />
+    <Content Include="lib\validation\localization\messages_ge.js" />
+    <Content Include="lib\validation\localization\messages_he.js" />
+    <Content Include="lib\validation\localization\messages_hu.js" />
+    <Content Include="lib\validation\localization\messages_it.js" />
+    <Content Include="lib\validation\localization\messages_ja.js" />
+    <Content Include="lib\validation\localization\messages_kk.js" />
+    <Content Include="lib\validation\localization\messages_lt.js" />
+    <Content Include="lib\validation\localization\messages_lv.js" />
+    <Content Include="lib\validation\localization\messages_nl.js" />
+    <Content Include="lib\validation\localization\messages_no.js" />
+    <Content Include="lib\validation\localization\messages_pl.js" />
+    <Content Include="lib\validation\localization\messages_ptbr.js" />
+    <Content Include="lib\validation\localization\messages_ptpt.js" />
+    <Content Include="lib\validation\localization\messages_ro.js" />
+    <Content Include="lib\validation\localization\messages_ru.js" />
+    <Content Include="lib\validation\localization\messages_si.js" />
+    <Content Include="lib\validation\localization\messages_sk.js" />
+    <Content Include="lib\validation\localization\messages_sl.js" />
+    <Content Include="lib\validation\localization\messages_sr.js" />
+    <Content Include="lib\validation\localization\messages_sv.js" />
+    <Content Include="lib\validation\localization\messages_th.js" />
+    <Content Include="lib\validation\localization\messages_tr.js" />
+    <Content Include="lib\validation\localization\messages_tw.js" />
+    <Content Include="lib\validation\localization\messages_ua.js" />
+    <Content Include="lib\validation\localization\messages_vi.js" />
+    <Content Include="lib\validation\localization\methods_de.js" />
+    <Content Include="lib\validation\localization\methods_nl.js" />
+    <Content Include="lib\validation\localization\methods_pt.js" />
+    <Content Include="lib\validation\version.txt" />
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20528</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20284/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
